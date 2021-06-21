@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Build A Survey Form</title>
+</head>
+<body> 
+
+<div>
+    <h1 id="title">Genesis G70 Purchase</h1>
+    <p id="description"><em>Thank you for taking your time to fill this survey</em></p>
+</div>
+  
+
+<div>
+    <form id="survey-form">
+
+        <div class="input-headings">
+        <label class="text-bold" id="name-label" for="name-label">Name</b></label>
+        <input id="name" type="text" placeholder="Enter your name" class="form-input" required> </input>
+        <br>
+
+
+        <br>
+        <label class="text-bold" id="email-label" for="email-label"> Email</label>
+        <input id="email" type="email"  placeholder="Enter your email" class="form-input"  required> </input>
+        <br>
+
+
+        <br>
+        <label class="text-bold" id="number-label" for="number-label">Age (optional)</label>
+        <input id="number" type="number" min="10" max="99" class="form-input" placeholder="Age"> </input>
+         <br>
+    </div>
+
+        
+
+    <div>
+        <br>
+        <label class="text-bold" for="dropdown" id="dropdown">How would you rate the value for the money of Genesis G70?</label>
+        <select id="dropdown" class="form-input">
+            <option value="none" selected disabled hidden>
+                Select an option
+            </option>
+             <option value="Option1">Excellent</option>
+             <option value="Option2">Above average</option>
+             <option value="Option3">Average</option>
+             <option value="Option4">Below average</option>
+             <option value="Option5">Poor</option>
+        </select>
+         <br>
+         <br>
+
+    </div>
+
+        
+    <div>
+
+    <label class="text-bold" for="recommand_model" id="recommand_model">Would you recommend this model to others?</label>
+
+        <br>
+        <br>
+        <input  id="recommand_model" type="radio" id="definitely" name="model" value="definitely">
+        <label for="recommand_model">Definitely</label>
+        <br>
+        <input  id="recommand_model" type="radio" id="maybe" name="model" value="maybe">
+        <label for="recommand_model">Maybe</label>
+        <br>
+        <input  id="recommand_model" type="radio" id="not_sure" name="model" value="not sure">
+        <label for="recommand_model">Not sure</label>
+        <br>
+        <br>
+
+    </div>
+
+    <div>
+
+        <label class="text-bold" for="feature" id="feature_model">What is your favorite feature of Genesis G70?</label>
+        <select id="dropdown" class="form-input">
+
+            <option value="none" selected disabled hidden>
+                Select an option
+            </option>
+
+             <option value="Option01">Engine</option>
+             <option value="Option02">Transmission</option>
+             <option value="Option03">Interior</option>
+             <option value="Option04">Exterior</option>
+             <option value="Option05">Safety</option>
+        </select>
+
+        <br>
+        <br>
+
+    </div>
+
+    <div>
+
+        <label class="text-bold" for="improve_model">what would you like to see improved?(check all that apply)</label>
+
+        <br>  
+        <br>  
+
+        <input id="checkbox" type="checkbox" name="improve_model" value="seating-space"></input>
+        <label for="checkbox">Seating space</label>
+        <br>
+        <input id="checkbox" type="checkbox" name="improve_model" value="Tires"></input>
+        <label for="checkbox">Tires</label>
+        <br>
+        <input id="checkbox" type="checkbox" name="improve_model" value="Navigation system"></input>
+        <label for="checkbox">Navigation system</label>
+        <br>
+        <input id="checkbox" type="checkbox" name="improve_model" value="sunroof"></input>
+        <label for="checkbox">Sunroof</label>
+        <br>
+        <input id="checkbox" type="checkbox" name="improve_model" value="camera"></input>
+        <label for="checkbox">Camera</label>
+        <br>
+        <input id="checkbox" type="checkbox" name="improve_model" value="Interior comfort"></input>
+        <label for="checkbox">Interior comfort</label>
+        <br>
+        <input id="checkbox" type="checkbox" name="improve_model" value="safety"></input>
+        <label for="checkbox">Safety</label>
+        <br>
+        <input id="checkbox" type="checkbox" name="improve_model" value="Driver-Assistance"></input>
+        <label for="checkbox">Driver-Assistance</label>
+        <br>
+        <br>
+
+    </div>
+        
+    <div>
+
+        <label class="text-bold" for="comments">Any Comments or Suggestions?</label>
+        <br>
+        <textarea class="text-area" placeholder="Enter here..."></textarea>
+        <br>
+        <br>
+
+    </div>
+
+    
+    <div>
+        <input type="submit" id="submit" class="submit-button"></input>
+    </div>
+
+
+    </div>
+    </form>
+</body>
+</html
